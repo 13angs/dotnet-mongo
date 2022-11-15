@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  dotnet-mongo:
+    image: mcr.microsoft.com/devcontainers/dotnet:0-6.0
+    container_name: dotnet-mongo
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ..:/workspaces/dotnet-mongo:cached
+    
+    networks:
+      - dotnet-mongo-network
+    
+    command: sleep infinity
+
+networks:
+  dotnet-mongo-network:
+    name: dotnet-mongo-network
