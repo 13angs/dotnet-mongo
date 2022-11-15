@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: P4ssw0rd
+    
+    networks:
+      - dotnet-mongo-network
+    
+networks:
+  dotnet-mongo-network:
+    name: dotnet-mongo-network
