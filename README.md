@@ -2,6 +2,12 @@
 
 ## Usage:
 
+- Install the package
+
+```bash
+dotnet add package 13angs.Dotnet.Mongo --version 0.0.1
+```
+
 - Register the config into DI container
 
 ```csharp
