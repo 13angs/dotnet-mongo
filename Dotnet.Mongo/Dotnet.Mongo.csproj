@@ -9,6 +9,7 @@
     <Authors>13angs</Authors>
     <PackageDescription>Dotnet core Mongodb Extensions</PackageDescription>
     <RepositoryUrl>https://github.com/13angs/dotnet-mongo</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
